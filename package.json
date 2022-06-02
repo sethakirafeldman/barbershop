@@ -1,0 +1,26 @@
+{
+  "name": "barbershop",
+  "version": "1.0.0",
+  "description": "Barbershop website",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode=development --open --hot",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethakirafeldman/barbershop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethakirafeldman/barbershop/issues"
+  },
+  "homepage": "https://github.com/sethakirafeldman/barbershop#readme",
+  "dependencies": {
+    "@babel/preset-react": "^7.17.12",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
