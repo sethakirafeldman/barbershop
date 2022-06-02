@@ -1,15 +1,13 @@
 import React from 'react';
-import Navbar from "Navbar";
-import background from './assets/chair.jpg';
+import "./style.css"
+import Navbar from "./Navbar";
+import Main from './Main';
 
 export default function App() {
     return(
-        <>
+    <>
         <Navbar />
-        <main>
-            <img src={background} alt="background"/>
-        </main>
-
-        </>
+        <Main />
+    </>
     )
 };
