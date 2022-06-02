@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+}
+
+#navigation-bar {
+    display: flex;
+    height: auto;
+    background-color: black;
+    color: white;  
+}
+
+nav > ul > li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    border-style:solid; 
+    border-color: white;
+}
+
+main {
+    background-image:url(./assets/chair.jpg);
+    margin: 0;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.background {
+    width: 100%;
+}
