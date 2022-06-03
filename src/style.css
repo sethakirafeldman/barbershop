@@ -1,5 +1,11 @@
 body {
     margin: 0;
+    background-image:url(./assets/chair.jpg);
+    margin: 0;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 #navigation-bar {
@@ -9,19 +15,17 @@ body {
     color: white;  
 }
 
-nav > ul > li {
-    list-style: none;
+nav > div > button {
     display: inline-block;
     padding: 0 20px;
-    border-style:solid; 
+    border-style: solid; 
     border-color: white;
+    background-color: black;
+    color: white;
 }
 
 main {
-    background-image:url(./assets/chair.jpg);
-    margin: 0;
-    height: 100vh;
-    background-attachment: fixed;
+
 }
 
 .background {
