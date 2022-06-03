@@ -25,9 +25,18 @@ nav > div > button {
 }
 
 main {
-
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 
-.background {
-    width: 100%;
+.booking {
+    background-color: transparent;
+    padding: 5px;
+    color: white;
+    border-radius: 8px;
+    font-size: large;
 }
