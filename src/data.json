@@ -1,0 +1,37 @@
+{ 
+    "home":[
+     {
+         "id": 1 ,
+         "name": "Home",
+         "text": "Welcome to Sandro's"
+    }
+    ],
+    "about":[
+        {
+            "id": 2 ,
+            "name": "About",
+            "text": "Sandro's was established in 19xx. It is a staple of the Weston-Pellam & Corso Italia neighborhood"
+       } 
+    ],
+    "services": [
+        {
+            "id": 3 ,
+            "name": "Services",
+            "text": "table-content"
+       }
+    ],
+    "booking": [
+        {
+            "id":4,
+            "name":"Booking",
+            "text":"booking calendar"
+        }
+    ],
+    "location": [
+        {
+            "id":5,
+            "name": "Location",
+            "text": "You can find Sandro's here"
+        }
+    ]
+}
