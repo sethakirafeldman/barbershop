@@ -24,8 +24,13 @@ nav > div > button {
     color: white;
 }
 
+button:hover {
+    border-width: 3px;
+}
+
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     justify-items: center;
     align-items: center;
@@ -37,6 +42,15 @@ main {
     background-color: transparent;
     padding: 5px;
     color: white;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     font-size: large;
+    /* border-width: 10px; */
+    border-color: white;
+    border-style: ridge;
+}
+
+.page-container {
+    border-style: solid;
+    padding: 10px;
+
 }
