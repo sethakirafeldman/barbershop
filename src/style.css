@@ -42,9 +42,7 @@ main {
     background-color: transparent;
     padding: 5px;
     color: white;
-    /* border-radius: 8px; */
     font-size: large;
-    /* border-width: 10px; */
     border-color: white;
     border-style: ridge;
 }
@@ -52,5 +50,25 @@ main {
 .page-container {
     border-style: solid;
     padding: 10px;
+}
 
+table, th, td {
+    border: 2px solid;
+}
+
+table {
+    border: 2px;
+    text-align: left;
+    color:white;
+}
+
+table > tr> th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: bold;
+    color:white;
+}
+
+td {
+    padding: 8px;
 }
