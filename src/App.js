@@ -2,6 +2,7 @@ import React from 'react';
 import "./style.css"
 import Navbar from "./Navbar";
 import Main from './Main';
+import Services from './Services';
 const data = require('./data.json');
 
 export default function App(props) {
