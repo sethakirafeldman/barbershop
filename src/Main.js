@@ -1,11 +1,15 @@
 import React from 'react';
 import Location from './Location';
+import Services from './Services';
 
 export default function Main(props) {
 
     const condRend = () => {
         if (props.pageName == "Location") {
             return (<Location />)
+        }
+        else if (props.pageName == "Services"){
+            return (<Services/>)
         }
     }
 
