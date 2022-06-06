@@ -10,9 +10,12 @@ body {
 
 #navigation-bar {
     display: flex;
-    height: auto;
-    background-color: black;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-basis: auto;
     color: white;  
+    
 }
 
 nav > div > button {
@@ -50,6 +53,8 @@ main {
 .page-container {
     border-style: solid;
     padding: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+
 }
 
 table, th, td {

@@ -2,7 +2,6 @@ import React from 'react';
 import "./style.css"
 import Navbar from "./Navbar";
 import Main from './Main';
-import Services from './Services';
 const data = require('./data.json');
 
 export default function App(props) {
@@ -12,7 +11,7 @@ export default function App(props) {
         console.log(event.target.value);
         setCurrentPage(event.target.value);
     }
-    console.log(data[currentPage][0])
+    // console.log(data[currentPage][0])
 
     return(
     <>
@@ -22,6 +21,7 @@ export default function App(props) {
         />
         <Main 
             pageName = {data[currentPage][0].name}
+            handleClick = {handleClick}
             text = {data[currentPage][0].text}
         />
     </>
