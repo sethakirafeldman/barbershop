@@ -3,35 +3,35 @@
      {
          "id": 1 ,
          "name": "Home",
-         "text": "Welcome to Sandro's"
+         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec pharetra ligula. Cras congue bibendum lectus, in varius nisl porta ac. Sed mattis, quam nec dignissim venenatis, lectus sem malesuada velit, at congue mauris arcu sit amet sem. Quisque a malesuada elit. Nunc sodales massa neque, ut congue enim aliquam vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sollicitudin fermentum nibh, quis laoreet eros vehicula in. Sed maximus placerat lorem, id euismod est placerat vitae. Proin eget auctor libero. In sit amet metus feugiat, accumsan sem vel, finibus enim. Mauris sollicitudin lectus at convallis gravida. Integer viverra blandit risus vitae porta. Ut eleifend a arcu sed volutpat."
     }
     ],
     "about":[
         {
             "id": 2 ,
             "name": "About",
-            "text": "Sandro's was established in 19xx. It is a staple of the Weston-Pellam & Corso Italia neighborhood"
+            "text": "Sed accumsan consequat interdum. Maecenas feugiat luctus magna, a consequat mi euismod in. Nullam vulputate ante vel eros ultricies semper. Cras non auctor nisl, rutrum tempus ipsum. Maecenas sit amet vulputate elit, quis malesuada augue. Vivamus accumsan justo justo, sed ullamcorper elit commodo id. Maecenas maximus sem sed sapien vehicula consequat. Aenean fringilla, massa non lobortis tempor, nibh leo sollicitudin sapien, a luctus nisi nisl id erat."
        } 
     ],
     "services": [
         {
             "id": 3 ,
             "name": "Services",
-            "text": "table-content"
+            "text": ""
        }
     ],
     "booking": [
         {
             "id":4,
             "name":"Booking",
-            "text":"booking calendar"
+            "text":"Booking calendar goes here."
         }
     ],
     "location": [
         {
             "id":5,
             "name": "Location",
-            "text": "You can find Sandro's here"
+            "text": "You can find the barber here"
         }
     ]
 }
