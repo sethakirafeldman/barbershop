@@ -11,14 +11,15 @@ export default function Main(props) {
         else if (props.pageName == "Services"){
             return (<Services/>)
         }
+        
     }
 
     return(
         <main>
             <section className='content-container'>
-            <h1>Welcome to Sandro's</h1>
-            <button className='booking'>Book Online</button>
-            <h4>Call: 555-555-5555</h4>
+                <h1>Welcome to Sandro's</h1>
+                <button className='booking' onClick={props.handleClick} value= 'booking'>Book Online</button>
+                <h4>Call: 555-555-5555</h4>
             </section>
             <div className='page-container'>
                 <h2>{props.pageName}</h2>
