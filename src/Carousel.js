@@ -1,30 +1,34 @@
 import React from 'react';
-import beard from "./assets/beard.jpg";
-import fade from "./assets/fade.jpg";
-import chevronR from "./assets/chevron-right.png";
-import chevronL from "./assets/chevron-left.png";
+import chevronR from "../public/assets/chevron-right.png";
+import chevronL from "../public/assets/chevron-left.png";
+import images from "./images.json";
 
 export default function Carousel() {
     const [index, setIndex] = React.useState(0);
 
-    const chevBtn = () => {
-        let parentEl = event.target.parentElement;
-        let activeImg = parentEl.children[1].children[0];
-        console.log(activeImg);
-        setIndex(activeImg.key);
-        console.log(index);
-        // change image as index increments.
+    const chevBtn = (dir) => {
+        if(index < 0 || index > images.assets.length) {
+            setIndex(0)
+        }
+
+        else if (dir == "left") {
+            setIndex(index-1);
+        }
+    
+        else if (dir == "right") {
+            setIndex(index+1);
+        }
+
     };
 
     return (
         
         <div className='outer-carousel'>
-            <img src={chevronL} className="chevron" onClick={chevBtn}  /> 
+            <img src={chevronL} className="chevron" onClick={()=> chevBtn("left")}  /> 
                 <div className='carousel-container'>
-                    <img src={beard} className="carousel-image active" key={0}/>
-                    <img src={fade} className="carousel-image inactive" key={1}/>
+                    <img src={images.assets[index].src} className="carousel-image active" />
                 </div>
-            <img src={chevronR} className="chevron" onClick={chevBtn} />
+            <img src={chevronR} className="chevron" onClick={() => chevBtn("right")} />
         </div>
     )
 }

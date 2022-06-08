@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-image:url(./assets/chair.jpg);
+    background-image:url(../public/assets/chair.jpg);
     margin: 0;
     height: 100vh;
     background-attachment: fixed;
