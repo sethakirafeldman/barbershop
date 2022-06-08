@@ -2,6 +2,7 @@ import React from 'react';
 import "./style.css"
 import Navbar from "./Navbar";
 import Main from './Main';
+import Carousel from './Carousel';
 const data = require('./data.json');
 
 export default function App(props) {
@@ -24,6 +25,8 @@ export default function App(props) {
             handleClick = {handleClick}
             text = {data[currentPage][0].text}
         />
+
+        <Carousel />
     </>
     )
 };
