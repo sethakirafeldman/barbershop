@@ -29,7 +29,8 @@ nav > div > button {
 }
 
 button:hover {
-    border-width: 3px;
+    background-color: rgba(0, 0, 0, 0.75);
+
 }
 
 main {
@@ -94,13 +95,15 @@ td {
 	transition: transform 0.7s ease-in-out;
 }
 
-#chevronL, #chevronR {
+.chevron {
     border-style: solid;
     width: 100px;  
     height: 50%;
     border-color: white;
 }
-
+.chevron:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+}
 .active {
     display: inline-block;
 }
