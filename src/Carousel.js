@@ -7,18 +7,23 @@ export default function Carousel() {
     const [index, setIndex] = React.useState(0);
 
     const chevBtn = (dir) => {
-        if(index < 0 || index > images.assets.length) {
-            setIndex(0)
-        }
 
-        else if (dir == "left") {
-            setIndex(index-1);
+        if (dir == "left") {
+            setIndex(index - 1);
+            if (index <= 0) { 
+                console.log(`going to end`);
+                setIndex(images.assets.length -1);
+            }
         }
     
         else if (dir == "right") {
-            setIndex(index+1);
+            setIndex(index + 1);
+            if (index >= images.assets.length - 1) {
+                console.log(`returning to 0`);
+                setIndex(0);
+            }
         }
-
+        console.log(index);
     };
 
     return (
