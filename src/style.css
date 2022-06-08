@@ -6,6 +6,7 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
+    z-index: -1;
 }
 
 #navigation-bar {
@@ -20,7 +21,7 @@ body {
 
 nav > div > button {
     display: inline-block;
-    padding: 0 20px;
+    padding: 15px;
     border-style: solid; 
     border-color: white;
     background-color: black;
@@ -39,6 +40,7 @@ main {
     align-items: center;
     text-align: center;
     color: white;
+    padding-bottom: 2%;
 }
 
 .booking {
@@ -76,4 +78,41 @@ table > tr> th {
 
 td {
     padding: 8px;
+}
+
+.outer-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.carousel-container{
+    display: flex;
+    height: auto;
+}
+
+.carousel-container-transition {
+	transition: transform 0.7s ease-in-out;
+}
+
+#chevronL, #chevronR {
+    border-style: solid;
+    width: 100px;  
+    height: 50%;
+    border-color: white;
+}
+
+.active {
+    display: inline-block;
+}
+
+.inactive {
+    display: none;
+}
+.carousel-image {
+    position: relative;
+    width: auto;
+    border-style: solid;
+    border-color: white;
+    max-height: 500px;
+    z-index: -1;
 }
