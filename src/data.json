@@ -24,14 +24,14 @@
         {
             "id":4,
             "name":"Booking",
-            "text":"Booking calendar goes here."
+            "text":"Below is a placeholder."
         }
     ],
     "location": [
         {
             "id":5,
             "name": "Location",
-            "text": "You can find the barber here"
+            "text": "Below is a placeholder."
         }
     ]
 }

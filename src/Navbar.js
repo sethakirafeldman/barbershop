@@ -2,12 +2,12 @@ import React from 'react';
 const data = require("./data.json");
 
 export default function Navbar (props) {
-    const genBtns = () => {
-        Object.values(data).map((item, index) => {
-            console.log(item[0]);
-            return <button onClick = {props.handleClick} value={item[0].name}>{item[0].name}</button>
-        })
-    }
+    // const genBtns = () => {
+    //     Object.values(data).map((item, index) => {
+    //         console.log(item[0]);
+    //         return <button onClick = {props.handleClick} value={item[0].name}>{item[0].name}</button>
+    //     })
+    // }
 
     return (
         <nav id='navigation-bar'>

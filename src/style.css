@@ -58,7 +58,12 @@ main {
     border-style: solid;
     padding: 10px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
+    max-width: 80%;
+}
 
+.calendar-container > iframe {
+    width: 800px;
+    height: 400px;
 }
 
 table, th, td {

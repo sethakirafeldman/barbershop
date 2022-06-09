@@ -5,11 +5,12 @@ import Main from './Main';
 import Carousel from './Carousel';
 const data = require('./data.json');
 
-export default function App(props) {
+export default function App() {
+    
     const [currentPage, setCurrentPage] = React.useState("home");
     
     const handleClick = () => {
-        console.log(event.target.value);
+        // console.log(event.target.value);
         setCurrentPage(event.target.value);
     }
     // console.log(data[currentPage][0])
