@@ -40,7 +40,7 @@ export default function Carousel() {
         <div className='outer-carousel'>
             <img src={chevronL} className="chevron" onClick={()=> chevBtn("left")}  /> 
                 <div className='carousel-container'>
-                    <img src={images.assets[index].src} className="carousel-image active" />
+                    <img src={images.assets[index].url} className="carousel-image active" />
                 </div>
             <img src={chevronR} className="chevron" onClick={() => chevBtn("right")} />
         </div>
