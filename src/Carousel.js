@@ -23,7 +23,6 @@ export default function Carousel() {
                 setIndex(0);
             }
         }
-        console.log(index);
     };
 
     return (
