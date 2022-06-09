@@ -3,8 +3,18 @@ import chevronR from "../public/assets/chevron-right.png";
 import chevronL from "../public/assets/chevron-left.png";
 import images from "./images.json";
 
+
 export default function Carousel() {
     const [index, setIndex] = React.useState(0);
+
+    // move through slideshow every 3 seconds.
+    React.useEffect( () => {
+        const interval = setInterval(() => {
+            chevBtn('right');
+        }, 3000);
+
+        return () => clearInterval(interval);
+    }, [index]);  
 
     const chevBtn = (dir) => {
 
@@ -18,8 +28,8 @@ export default function Carousel() {
     
         else if (dir == "right") {
             setIndex(index + 1);
-            if (index >= images.assets.length - 1) {
-                console.log(`returning to 0`);
+            if (index >= images.assets.length -1 ) {
+                // console.log(`returning to 0`);
                 setIndex(0);
             }
         }
