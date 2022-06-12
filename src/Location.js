@@ -8,8 +8,8 @@ export default function Location() {
     return (
         <div>
             <iframe
-                width="600"
-                height="450"
+                width="100%"
+                height="100%"
                 src={src}>
             </iframe>
         </div>
