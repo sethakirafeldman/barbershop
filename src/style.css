@@ -32,15 +32,19 @@ nav > div > button {
 }
 
 #hamburger-menu {
-    /* display: none; */
+    display: none;
     position: absolute;
     left:0;
     top:0;
-    width: 200px;
+    width: 100px;
 }
 
 .hamburger-icon:hover{
     background-color: grey;
+}
+
+#hamburger-items > .hidden {
+    display: none;
 }
 
 #hamburger-items {
@@ -48,18 +52,28 @@ nav > div > button {
     flex-direction: column;
 }
 
-#hamburger-items > .hidden {
-    display: none;
-}
 .hamburger-list {
-    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin: 0;
+}
+
+.hamburger-list > button {
+    font-size: larger;
+    width: 100%;
+    border-style: solid; 
+    border-color: white;
+    background-color: black;
+    color: white;
 }
 
 @media screen and (max-width:600px) {
+    /* hide main menu when less than above val */
     #nav-buttons {
         display: none;
     }
-
+    /* show hamburger menu when less than above val */
     #hamburger-menu{
         display: block;
         position: absolute;
@@ -72,7 +86,7 @@ nav > div > button {
 
 
 .hamburger-icon {
-    width: 25%;
+    width: 50%;
 }
 /* Buttons */
 button:hover {
