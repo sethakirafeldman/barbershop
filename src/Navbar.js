@@ -31,18 +31,13 @@ export default function Navbar (props) {
                     <img 
                         src={menuIcon} 
                         className="hamburger-icon"
-                        onClick={toggleMenu}
+                        onMouseEnter={toggleMenu}
                     />
-                    <ul 
-                        className={showMenu ? "hamburger-list" : "hamburger-list hidden"}>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Services</li>
-                        <li>Booking</li>
-                        <li>Location</li>
-                    </ul>
-                    
-                   
+                    <div 
+                        className={showMenu ? "hamburger-list" : "hamburger-list hidden"}
+                        onMouseLeave={toggleMenu}>
+                        {genBtns} 
+                    </div>
                 </div>
             </div>
         </nav>
