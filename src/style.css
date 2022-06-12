@@ -10,6 +10,7 @@ body {
     z-index: -1;
 }
 
+/* Navbar */
 #navigation-bar {
     display: flex;
     height: 50px;
@@ -30,11 +31,55 @@ nav > div > button {
     color: white;
 }
 
-button:hover {
-    background-color: rgba(0, 0, 0, 0.75);
-
+#hamburger-menu {
+    /* display: none; */
+    position: absolute;
+    left:0;
+    top:0;
+    width: 200px;
 }
 
+.hamburger-icon:hover{
+    background-color: grey;
+}
+
+#hamburger-items {
+    display: flex;
+    flex-direction: column;
+}
+
+#hamburger-items > .hidden {
+    display: none;
+}
+.hamburger-list {
+    list-style: none;
+}
+
+@media screen and (max-width:600px) {
+    #nav-buttons {
+        display: none;
+    }
+
+    #hamburger-menu{
+        display: block;
+        position: absolute;
+        left:0;
+        top:0;
+    }
+}
+
+
+
+
+.hamburger-icon {
+    width: 25%;
+}
+/* Buttons */
+button:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Page Styling */
 main {
     display: flex;
     flex-direction: column;
@@ -100,16 +145,21 @@ td {
     align-items: center;
     justify-content: center;
     padding-bottom: 5%;
+    margin: auto;
+    /* width: 75%; */
+    max-width: 100%;
+
+
 }
 .carousel-container{
-    display: flex;
-    height: auto;
-    width: auto;
+    /* display: flex; */
+    /* height: 50%;
+    width: 50%; */
 }
 
 .chevron {
     border-style: solid;
-    width: 100px;  
+    width: 50px;  
     height: 50%;
     border-color: white;
 }
@@ -119,11 +169,10 @@ td {
 
 .carousel-image {
     position: relative;
-    width: auto;
     border-style: solid;
     border-color: white;
     max-height: 400px;
     width: 600px;
     object-fit: cover;
-
 }
+
