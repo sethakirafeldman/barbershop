@@ -68,7 +68,7 @@ nav > div > button {
     color: white;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
     /* hide main menu when less than above val */
     #nav-buttons {
         display: none;
@@ -160,10 +160,8 @@ td {
     justify-content: center;
     padding-bottom: 5%;
     margin: auto;
-    /* width: 75%; */
-    max-width: 100%;
-
-
+    width: 600px;
+    max-width: 75%;
 }
 .carousel-container{
     /* display: flex; */
@@ -185,8 +183,26 @@ td {
     position: relative;
     border-style: solid;
     border-color: white;
-    max-height: 400px;
+    height: 400px;
     width: 600px;
     object-fit: cover;
 }
+
+@media only screen and (max-width: 800px) {
+    .carousel-image {
+        position: relative;
+        height: 200px ;
+        width: 300px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .carousel-image {
+        height: 150px;
+        width: 200px;
+        object-fit: cover;
+    }
+}
+
 
