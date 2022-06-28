@@ -3,6 +3,8 @@
 ## Description
 React single page application featuring carousel image slideshow component. Responsive design and menu shrinks to hamburger for mobile.
 
+A live version is available [here](https://barbershop-demo.netlify.app/).
+
 ## Technology
 This was built with React and Webpack. All components were written from scratch. 
 
